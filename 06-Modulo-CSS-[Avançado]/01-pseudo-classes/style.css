@@ -1,0 +1,73 @@
+/*  ANATOMIA DE UMA PSEUDO CLASSE 
+
+.seletor:pseudoclasse{
+    propriedade: valor;
+} 
+
+*/
+
+
+/* FIRST CHILD */
+.section-01 div p:first-child{
+    color: lightcoral;
+    font-weight: bolder;
+}
+/* LAST CHILD */
+.section-02 div p:last-child{
+    color: crimson;
+    font-weight: bolder;
+}
+
+/* NOT + CLASS */
+/* Todo parágrafo que NÃO TIVER a classe "padrao" sofrerá modificações. */
+.section-03 li:not(.premium){
+    color: goldenrod;
+}
+
+
+
+/* NTH CHILD ============================================================= */
+/* -> Vai modificar todos os itens IMPARES.
+.section-04 li:nth-child(odd){
+    color: goldenrod;
+}
+*/
+/* ============================================================= */
+/* -> Vai modificar todos os itens PARES.
+.section-04 li:nth-child(even){
+    color: goldenrod;
+}
+*/
+/* ============================================================= */
+/* -> Vai modificar de 3 em 3.
+.section-04 li:nth-child(3n){    (2n)|(5n)(8n)|(3n)...
+    color: goldenrod;
+} 
+*/
+/* ============================================================= */
+/* -> Vai modificar apenas o item declarado entre parênteses.
+.section-04 li:nth-child(6){
+    color: goldenrod;
+*/
+/* ============================================================= */
+/* -> Vai modificar apenas os itens dentro de um range pré-determinado.
+1 = A primeira metade do código diz respeito ao range de cima para baixo.
+2 = A segunda metade do código diz respeito ao range final, onde vai parar de estilizar.
+|--------1-------|-------2-------|
+.section-04 li:nth-child(n+2):nth-child(-n+5){
+    color: goldenrod;
+} 
+*/
+/* ============================================================= */
+/* -> Vai modificar as mesas coisas dos estilos de cima, mas no sentido inverso.
+.section-05 li:nth-last-child(6){
+    color: goldenrod;
+}
+*/
+/* ============================================================= */
+/* -> Vai modificar apenas o item que não tiver nenhum irmão (pai/container nesse caso é a div).
+.section-06 p:only-child{
+    color: goldenrod;
+} 
+*/
+/* ============================================================= */
