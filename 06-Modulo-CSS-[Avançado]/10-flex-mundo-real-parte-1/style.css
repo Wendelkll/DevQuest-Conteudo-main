@@ -1,0 +1,13 @@
+.flex{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(252, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex h2{
+    font-size: 60px;
+}
+
